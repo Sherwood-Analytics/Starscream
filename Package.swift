@@ -25,14 +25,19 @@ import PackageDescription
 
 let package = Package(
         name: "Starscream",
+        platforms: [
+            .macOS(.v10_15),
+        ],
         products: [
             .library(name: "Starscream", targets: ["Starscream"])
         ],
         dependencies: [
+            .package(name: "swift-crypto", url: "https://github.com/apple/swift-crypto.git", from: "2.0.0")
         ],
         targets: [
             .target(name: "Starscream",
                     dependencies: [
+                        .product(name: "Crypto", package: "swift-crypto")
                     ],
                     path: "Sources",
                     linkerSettings: [
