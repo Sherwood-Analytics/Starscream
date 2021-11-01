@@ -25,7 +25,7 @@
 //  for WebSocket: https://tools.ietf.org/html/rfc7692
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
-
+/*
 import Foundation
 import zlib
 
@@ -245,3 +245,4 @@ class Compressor {
         teardownDeflate()
     }
 }
+*/
