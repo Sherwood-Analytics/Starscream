@@ -32,7 +32,7 @@ let package = Package(
             .library(name: "Starscream", targets: ["Starscream"])
         ],
         dependencies: [
-            .package(name: "swift-crypto", url: "https://github.com/apple/swift-crypto.git", from: "2.0.0")
+            .package(name: "swift-crypto", url: "https://github.com/apple/swift-crypto.git", from: "1.0.0")
         ],
         targets: [
             .target(name: "Starscream",
