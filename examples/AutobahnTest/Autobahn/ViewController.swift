@@ -8,6 +8,9 @@
 
 import UIKit
 import Starscream
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 class ViewController: UIViewController {
     
